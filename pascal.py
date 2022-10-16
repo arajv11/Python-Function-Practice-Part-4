@@ -10,9 +10,9 @@ def pascal(n):
         print("1")
         print("1 1")
 
-        row_list = [1, 1]
-        row_number = 3
-        def new_rows(row_list, row_number):
+        def new_rows():
+            row_number = 3
+            row_list = [1, 1]
             while (row_number <= n):
                 current_row = [1]
                 output_string = "1"
@@ -24,7 +24,7 @@ def pascal(n):
                 current_row.append(1)
                 row_list = current_row
                 row_number += 1
-        new_rows(row_list, row_number)
+        new_rows()
 
 print("Pascal 0")
 pascal(0)
